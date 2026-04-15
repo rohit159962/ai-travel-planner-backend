@@ -21,6 +21,7 @@ app.use('/api/trips', tripRoutes)
 const generateRoutes = require('./routes/generateRoutes')
 app.use('/api/generate', generateRoutes)
 
+app.use("/api/chat", chatRoutes);
 // Test route
 app.get('/', (req, res) => {
   res.json({ message: 'WandrAI Backend is running!' })
