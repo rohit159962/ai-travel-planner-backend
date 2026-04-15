@@ -21,6 +21,7 @@ app.use('/api/trips', tripRoutes)
 const generateRoutes = require('./routes/generateRoutes')
 app.use('/api/generate', generateRoutes)
 
+const chatRoutes = require('./routes/chatRoutes');
 app.use("/api/chat", chatRoutes);
 // Test route
 app.get('/', (req, res) => {
